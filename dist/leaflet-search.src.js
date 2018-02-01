@@ -1,7 +1,7 @@
 /* 
- * Leaflet Control Search v2.3.7 - 2017-11-13 
+ * Leaflet Control Search v2.3.7 - 2018-02-01 
  * 
- * Copyright 2017 Stefano Cudini 
+ * Copyright 2018 Stefano Cudini 
  * stefano.cudini@gmail.com 
  * http://labs.easyblog.it/ 
  * 
@@ -564,7 +564,7 @@ L.Control.Search = L.Control.extend({
          
       }
     }
-    if(layer instanceof L.Path || layer instanceof L.Polyline || layer instanceof L.Polygon)
+    else if(layer instanceof L.Path || layer instanceof L.Polyline || layer instanceof L.Polygon)
     {
       if(self._getPath(layer.options,propName))
       {
